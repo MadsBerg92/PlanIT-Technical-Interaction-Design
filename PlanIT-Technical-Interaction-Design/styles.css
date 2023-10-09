@@ -1563,3 +1563,70 @@ a.button1:hover {
     width: 100%;
   }
 }
+/* NEW CSS */
+.event-image-preview {
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form-group {
+  text-align: center;
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+form label,
+form input,
+form textarea,
+form select {
+  display: block;
+
+}
+
+label {
+  font-weight: bold;
+
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  max-width: 500px;
+}
+
+
+input[type="submit"] {
+  background-color: #ABCDA4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #D3E4CD;
+}
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+}

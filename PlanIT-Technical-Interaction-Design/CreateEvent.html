@@ -3,18 +3,182 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/bootstrap.css" />
+    <title>PlanIT - Your event platform</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/bsm6rwg.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/scripts/bootstrap.bundle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3a3dfa1112.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/scripts/bootstrap.bundle.js"></script>
   </head>
   <body>
+    <!-- ----------- Navbar ---------- -->
+
     <nav
       class="navbar navbar-expand-md sticky-top navbar-light"
       aria-label="Navbar"
     >
-      <a class="navbar-logo" href="index.html">
-        <img src="images/Calendar.png" class="logo" />
-      </a>
+      <div class="container-fluid ms-auto justify-content-end">
+        <!-- logo for bigger screen -->
+        <div class="d-none d-md-block" id="largeLogo">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/logo.png"
+              height="40"
+              class="d-inline-block align-top"
+              alt="logo"
+            />
+          </a>
+        </div>
+
+        <button
+          class="btn navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- logo for smaller screen -->
+        <a
+          class="navbar-brand d-md-none mx-auto justify-content-center"
+          href="index.html"
+        >
+          <img
+            src="images/logo.png"
+            height="30"
+            class="d-inline-block align-top"
+            alt="logo"
+          />
+        </a>
+
+        <!-- Centered menu bigger screen -->
+        <div class="collapse navbar-collapse" id="navbar_menu">
+          <ul class="navbar-nav mx-auto justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="createEvent.html">Create Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- right buttons -->
+        <div class="containter" id="icon_container">
+          <ul class="navbar-nav me-auto justify-content-end" id="icons">
+            <li class="nav-item">
+              <a class="btn" aria-label="user" href="pages/user"
+                ><i class="fa fa-user"></i
+              ></a>
+            </li>
+
+            <li class="nav-item"></li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <!--Create an "create event" page-->
+
+    <div class="form-group">
+      <img
+        id="event-image-preview"
+        class="event-image-preview"
+        src="images/event-photography.jpg"
+        alt="Event Image Preview"
+      /><br />
+      <form>
+        <label for="event-name">Event Name:</label>
+        <input
+          type="text"
+          id="event-name"
+          name="event-name"
+          placeholder="Enter event name"
+          required
+        /><br />
+
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required /><br />
+
+        <label for="event-time">Event Time:</label>
+        <input type="time" id="event-time" name="event-time" required /><br />
+
+        <label for="event-location">Event Location:</label>
+        <input
+          type="text"
+          id="event-location"
+          name="event-location"
+          placeholder="Enter event location"
+          required
+        /><br />
+
+        <label for="event-description">Event Description:</label>
+        <textarea
+          id="event-description"
+          name="event-description"
+          placeholder="Enter event description"
+          required
+        ></textarea
+        ><br />
+
+        <label for="event-image">Event Image:</label>
+        <input
+          type="file"
+          id="event-image"
+          name="event-image"
+          onchange="previewImage(event)"
+          required
+        /><br />
+
+        <input type="submit" value="Create Event" />
+      </form>
+    </div>
+
+    <script>
+      function previewImage(event) {
+        const preview = document.querySelector("#event-image-preview");
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.addEventListener(
+          "load",
+          () => {
+            preview.src = reader.result;
+          },
+          false
+        );
+
+        if (file) {
+          reader.readAsDataURL(file);
+        }
+      }
+    </script>
   </body>
 </html>
