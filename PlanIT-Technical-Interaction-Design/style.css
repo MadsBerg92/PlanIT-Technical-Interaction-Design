@@ -1,18 +1,111 @@
-body, html {
+/* Event Page */
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 50vh; /* Make the container take the full viewport height */
+  margin-top: 10px;
+}
+
+.eventImage {
+  /* Add any additional styling for your image here */
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  max-height: 100%; /* Ensure the image does not exceed its container */
+}
+
+.event-title .header {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #abcda4;
+}
+
+/* Event info box */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.information-box,
+.description-box,
+.discussion-board,
+.shopping-list {
+  margin-top: 10px;
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Add spacing between the boxes */
+}
+
+.information-box h2,
+.description-box h2,
+.shopping-list h2 {
+  font-size: 18px;
+}
+
+.information-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.information-box ul li {
+  margin-bottom: 8px;
+}
+
+.information-box ul li strong {
+  font-weight: bold;
+}
+
+.discussion-board {
+  flex: 2;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  overflow: hidden; /* Hide content that overflows the container */
+}
+
+.discussion-content {
+  max-height: 200px; /* Adjust the maximum height as needed */
+  overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+}
+
+.shopping-content {
+  max-height: 200px; /* Adjust the maximum height as needed */
+  overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+}
+
+.calendar-container {
+  flex: 2; /* Takes up the same width as the other rows */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+/* Event Page END*/
+
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Gabarito', sans-serif;
-  background-color: #F9F3DB;
+  font-family: "Gabarito", sans-serif;
+  background-color: #f9f3db;
 }
 
 .header {
   width: 65%;
   padding-top: 20px;
-  margin:auto;
-  background-color: #F9F3DB;
+  margin: auto;
+  background-color: #f9f3db;
   display: flex;
-  align-items:baseline;
+  align-items: baseline;
   font-size: 30px;
   height: fit-content;
 }
@@ -21,8 +114,8 @@ nav {
   font-size: larger;
   width: 65%;
   margin: 0 auto;
-  background: #FCF8EE;
-  box-shadow: 0px 5px 0px #f0ece1
+  background: #fcf8ee;
+  box-shadow: 0px 5px 0px #f0ece1;
 }
 
 nav ul {
@@ -30,11 +123,13 @@ nav ul {
   /* justify-content: space-between; */
 }
 
-.nav-left, .nav-right {
+.nav-left,
+.nav-right {
   display: flex;
 }
 
-.nav-left li, .nav-right li {
+.nav-left li,
+.nav-right li {
   margin: 0 10px;
   vertical-align: middle;
 }
@@ -47,7 +142,7 @@ nav ul li a {
   display: block;
   padding: 15px;
   text-decoration: none;
-  color: #ABCDA4;
+  color: #abcda4;
   font-weight: 800;
   text-transform: uppercase;
   margin: 0 10px;
@@ -55,7 +150,7 @@ nav ul li a {
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .5s;
+  transition: all 0.5s;
 }
 nav ul li a:hover {
   color: #555;
@@ -74,7 +169,7 @@ nav.fill ul li a:after {
   right: 0;
   margin: auto;
   width: 0%;
-  content: '.';
+  content: ".";
   color: transparent;
   background: #aaa;
   height: 2px;
@@ -86,15 +181,17 @@ nav.stroke ul li a:hover:after {
 /* CSS */
 .button-4 {
   appearance: none;
-  background-color: #F9F3DB;
+  background-color: #f9f3db;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
   box-sizing: border-box;
-  color: #24292E;
+  color: #24292e;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -111,20 +208,20 @@ nav.stroke ul li a:hover:after {
 }
 
 .button-4:hover {
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
   text-decoration: none;
   transition-duration: 0.1s;
 }
 
 .button-4:disabled {
-  background-color: #FAFBFC;
+  background-color: #fafbfc;
   border-color: rgba(27, 31, 35, 0.15);
-  color: #959DA5;
+  color: #959da5;
   cursor: default;
 }
 
 .button-4:active {
-  background-color: #EDEFF2;
+  background-color: #edeff2;
   box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
   transition: none 0s;
 }
@@ -147,40 +244,39 @@ span {
 
 /* Login Page Specific styles */
 .login-container {
-    background-color: #FCF8EE;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 50px auto;
-    text-align: center;
+  background-color: #fcf8ee;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
 }
 
 .login-container h2 {
-    color: #ABCDA4;
-    margin-bottom: 20px;
+  color: #abcda4;
+  margin-bottom: 20px;
 }
 
 .input-group {
-    margin-bottom: 15px;
-    text-align: left;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #9ab693;
+  display: block;
+  margin-bottom: 5px;
+  color: #9ab693;
 }
 
 .input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #D3E4CD;
-    border-radius: 4px;
-    background-color: #F9F3DB;
-    color: #555;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d3e4cd;
+  border-radius: 4px;
+  background-color: #f9f3db;
+  color: #555;
 }
-
 
 /*
 All colors used:

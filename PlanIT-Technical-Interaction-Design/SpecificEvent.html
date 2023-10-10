@@ -1,9 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/img/icon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="scripts/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <!-- FullCalendar link and scripts -->
   </head>
-  <body></body>
+  <body>
+    <!-- NAVBAR -->
+
+    <nav
+      class="navbar navbar-expand-md sticky-top navbar-light"
+      aria-label="Navbar"
+    >
+      <div class="container-fluid ms-auto justify-content-end">
+        <!-- logo for bigger screen -->
+        <div class="d-none d-md-block" id="largeLogo">
+          <a class="navbar-brand" href="/index.html">
+            <img
+              src="/PlanIT-Technical-Interaction-Design/images/PlanITLogo.png"
+              height="40"
+              class="d-inline-block align-top"
+              alt="logo"
+            />
+          </a>
+        </div>
+
+        <button
+          class="btn navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- logo for smaller screen -->
+        <a
+          class="navbar-brand d-md-none mx-auto justify-content-center"
+          href="/index.html"
+        >
+          <img
+            src="/img/logo.svg"
+            height="30"
+            class="d-inline-block align-top"
+            alt="logo"
+          />
+        </a>
+
+        <!-- Centered menu bigger screen -->
+        <div class="collapse navbar-collapse" id="navbar_menu">
+          <ul class="navbar-nav mx-auto justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Create Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Accesories.html">My Events</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- right buttons -->
+        <div class="containter" id="icon_container">
+          <ul class="navbar-nav me-auto justify-content-end" id="icons">
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn inline-button d-none d-md-block btn custom-button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-label="search_button_large"
+              >
+                <span class="fa fa-search"></span>
+              </button>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn" aria-label="user" href="pages/user"
+                ><i class="fa fa-user btn custom-button"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END-->
+
+    <!-- EVENT Title -->
+    <div class="event-title">
+      <p class="header">Pernille's awesome birthday party</p>
+    </div>
+
+    <!-- EVENT IMAGE -->
+    <div class="image-container">
+      <img
+        class="eventImage"
+        src="/PlanIT-Technical-Interaction-Design/images/Birthday.jpg"
+      />
+    </div>
+
+    <!-- Event Details -->
+    <div class="container">
+      <div class="information-box">
+        <h2>Event Information</h2>
+        <ul>
+          <li><strong>Event Location:</strong> My house at Frederiksberg</li>
+          <li><strong>Date:</strong> October 15, 2023, 17:00</li>
+          <li><strong>Host:</strong> Pernille Svendsen</li>
+          <li><strong>Attending:</strong> You are going!</li>
+          <!-- Add more information as needed -->
+        </ul>
+      </div>
+
+      <div class="description-box">
+        <h2>Event Description</h2>
+        <p>
+          Celebrate with us as we mark a significant milestone in life! It's
+          time to revel in the joy of reaching 35 years, filled with memories,
+          accomplishments, and laughter. Join us for a remarkable evening that
+          promises to be an unforgettable chapter in the book of our lives. Our
+          35th birthday party has a fantastic theme—[Theme Name]. Get ready to
+          immerse yourself in a world of [Theme Description], from the
+          decorations to the music and everything in between. Dress up according
+          to the theme, or come as you are; the choice is yours!
+        </p>
+      </div>
+    </div>
+
+    <!-- Event Discussion -->
+    <div class="container">
+      <div class="discussion-board">
+        <h2>Discussion-board</h2>
+        <div class="discussion-content">
+          <p>
+            Person A: Hey everyone! I'm so excited about John's 35th birthday
+            party coming up. What should we bring to make it extra special?
+          </p>
+          <p>
+            Person B: Agreed! How about I bring a cake? I make a mean chocolate
+            cake, and it's perfect for celebrating birthdays.
+          </p>
+          <p>
+            Person C: That sounds delicious, Person B! I can handle the drinks -
+            a variety of soft drinks and some adult beverages for those who want
+            them.
+          </p>
+          <p>
+            Person A: Hey everyone! I'm so excited about John's 35th birthday
+            party coming up. What should we bring to make it extra special?
+          </p>
+          <p>
+            Person B: Agreed! How about I bring a cake? I make a mean chocolate
+            cake, and it's perfect for celebrating birthdays.
+          </p>
+          <p>
+            Person C: That sounds delicious, Person B! I can handle the drinks -
+            a variety of soft drinks and some adult beverages for those who want
+            them.
+          </p>
+          <p>
+            Person A: Hey everyone! I'm so excited about John's 35th birthday
+            party coming up. What should we bring to make it extra special?
+          </p>
+          <p>
+            Person B: Agreed! How about I bring a cake? I make a mean chocolate
+            cake, and it's perfect for celebrating birthdays.
+          </p>
+          <p>
+            Person C: That sounds delicious, Person B! I can handle the drinks -
+            a variety of soft drinks and some adult beverages for those who want
+            them.
+          </p>
+        </div>
+      </div>
+
+      <div class="shopping-list">
+        <h2>Shopping List</h2>
+        <div class="shopping-content">
+          <ul id="shopping-list-items">
+            <li>
+              <label for="item1">Balloons</label>
+              <input type="checkbox" id="item1" />
+            </li>
+            <li>
+              <label for="item2">Cake</label>
+              <input type="checkbox" id="item2" />
+            </li>
+            <li>
+              <label for="item3">Candles</label>
+              <input type="checkbox" id="item3" />
+            </li>
+            <li>
+              <label for="item4">Party Hats</label>
+              <input type="checkbox" id="item4" />
+            </li>
+            <li>
+              <label for="item5">Streamers</label>
+              <input type="checkbox" id="item5" />
+            </li>
+            <li>
+              <label for="item6">Party Plates</label>
+              <input type="checkbox" id="item6" />
+            </li>
+            <li>
+              <label for="item7">Napkins</label>
+              <input type="checkbox" id="item7" />
+            </li>
+            <li>
+              <label for="item8">Beverages</label>
+              <input type="checkbox" id="item8" />
+            </li>
+            <li>
+              <label for="item9">Snacks</label>
+              <input type="checkbox" id="item9" />
+            </li>
+            <li>
+              <label for="item10">Party Decorations</label>
+              <input type="checkbox" id="item10" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Calendar -->
+    <div class="calendar-container">
+      <div id="calendar"></div>
+    </div>
+  </body>
 </html>
