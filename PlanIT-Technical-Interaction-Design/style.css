@@ -145,6 +145,43 @@ span {
   word-break: keep-all;
 }
 
+/* Login Page Specific styles */
+.login-container {
+    background-color: #FCF8EE;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #ABCDA4;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #9ab693;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D3E4CD;
+    border-radius: 4px;
+    background-color: #F9F3DB;
+    color: #555;
+}
+
+
 /*
 All colors used:
 
