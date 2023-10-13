@@ -22,7 +22,26 @@
 
 .information-box,
 .description-box,
-.discussion-board,
+.discussion-board {
+  margin-top: 10px;
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Add spacing between the boxes */
+}
+
+.calendar {
+  margin-top: 10px;
+  flex: 2;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Add spacing between the boxes */
+}
+
 .shopping-list {
   margin-top: 10px;
   flex: 1;
@@ -61,23 +80,13 @@
 }
 
 .discussion-content {
-  max-height: 200px; /* Adjust the maximum height as needed */
+  max-height: 1000px; /* Adjust the maximum height as needed */
   overflow-y: auto; /* Add a vertical scrollbar when content overflows */
 }
 
 .shopping-content {
   max-height: 200px; /* Adjust the maximum height as needed */
   overflow-y: auto; /* Add a vertical scrollbar when content overflows */
-}
-
-.calendar-container {
-  flex: 2; /* Takes up the same width as the other rows */
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 10px 0;
-  box-sizing: border-box; /* Ensure padding doesn't affect the width */
 }
 
 .actionBar {
@@ -121,6 +130,50 @@
   background-color: #d2b48c; /* Light green background color for Person C */
   border-radius: 15px; /* Use a high value to create a circular shape */
   padding: 10px 20px; /* Adjust the padding as needed */
+}
+
+/* Styling for the calendar */
+.calendar {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+#month-year {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.selected-date {
+  background-color: green;
+  color: white;
 }
 
 /* Event Page END*/
