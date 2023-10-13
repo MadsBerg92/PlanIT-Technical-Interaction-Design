@@ -218,6 +218,7 @@ form select {
 
 label {
   font-weight: bold;
+  
 }
 
 input[type="text"],
@@ -230,6 +231,7 @@ textarea {
   width: 100%;
   font-size: 16px;
   max-width: 500px;
+  border-radius: 20px
 }
 
 input[type="submit"] {
@@ -240,6 +242,7 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
+  border-radius: 50px;
   font-size: 16px;
 }
 
