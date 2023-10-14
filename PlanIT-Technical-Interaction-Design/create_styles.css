@@ -195,6 +195,7 @@ button.transparant {
   margin: 0 auto;
   max-width: 30%;
   height: auto;
+  margin-top: 10px ;
 }
 
 .form-group {
