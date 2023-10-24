@@ -195,11 +195,12 @@ button.transparant {
   margin: 0 auto;
   max-width: 30%;
   height: auto;
+  margin-top: 10px;
 }
 
 .form-group {
   text-align: center;
-  background-color: #f9f3db;
+  background-color: white;
   font-family: "Gabarito", sans-serif;
 }
 
@@ -230,21 +231,23 @@ textarea {
   width: 100%;
   font-size: 16px;
   max-width: 500px;
+  border-radius: 20px;
 }
 
 input[type="submit"] {
-  background-color: #abcda4;
+  background-color: #1a8652;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
+  border-radius: 50px;
   font-size: 16px;
 }
 
 input[type="submit"]:hover {
-  background-color: #d3e4cd;
+  background-color: #1a7345;
 }
 
 #error-message {
