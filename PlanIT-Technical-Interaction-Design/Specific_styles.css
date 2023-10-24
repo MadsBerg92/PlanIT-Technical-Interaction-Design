@@ -187,6 +187,7 @@ body {
 
 .navbar {
   background-color: #d3e4cd;
+  font-family: "Gabarito", sans-serif;
 }
 
 /* Index Video position*/
@@ -415,10 +416,6 @@ body {
   border-top: 0.5px solid black;
   border-bottom: 0.5px solid #465b52;
   transition: 0.4s;
-}
-
-ul li:hover a {
-  padding-left: 50px;
 }
 
 #sidebar ul a i {
