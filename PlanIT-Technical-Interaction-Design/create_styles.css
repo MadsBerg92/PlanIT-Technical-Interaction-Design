@@ -251,3 +251,7 @@ input[type="submit"]:hover {
   color: red;
   margin-top: 10px;
 }
+
+div nav ul {
+  background-color: #F9F3DB;
+}
