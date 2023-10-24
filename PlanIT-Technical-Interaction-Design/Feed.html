@@ -7,35 +7,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="scripts/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="bootstrap.css" />
-    <link rel="stylesheet" href="Specific_styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="create_styles.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-    <!-- <link rel="icon" type="image/x-icon" href="/img/icon.ico" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="scripts/bootstrap.bundle.js"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-
-    <link rel="stylesheet" href="bootstrap.css" />
-    <link rel="stylesheet" href="create_styles.css" />
-
-    <title>Document</title>
+    <title>Feed page</title>
   </head>
 
   <body style="background-color: white">
-    <!-- Andreas' Navbar -->
+    <!-- ----------- Navbar ---------- -->
+
     <nav
       class="navbar navbar-expand-md sticky-top navbar-light"
       aria-label="Navbar"
@@ -68,7 +62,7 @@
         <!-- logo for smaller screen -->
         <a
           class="navbar-brand d-md-none mx-auto justify-content-center"
-          href="/index.html"
+          href="Feed.html"
         >
           <img
             src="images/logo.png"
@@ -85,10 +79,10 @@
               <a class="nav-link" href="Feed.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="CreateEvent.html">Create Event</a>
+              <a class="nav-link" href="createEvent.html">Create Event</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">My Events</a>
+              <a class="nav-link" href="#">My Events</a>
             </li>
           </ul>
         </div>
@@ -97,28 +91,29 @@
         <div class="containter" id="icon_container">
           <ul class="navbar-nav me-auto justify-content-end" id="icons">
             <li class="nav-item">
-              <button
-                type="button"
-                class="btn inline-button d-none d-md-block btn custom-button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight"
-                aria-label="search_button_large"
-              >
-                <span class="fa fa-search"></span>
-              </button>
-            </li>
-
-            <li class="nav-item">
               <a class="btn" aria-label="user" href="pages/user"
-                ><i class="fa fa-user btn custom-button"></i
+                ><i class="fa fa-user"></i
               ></a>
             </li>
+
+            <li class="nav-item"></li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="event-title" style="background-color: white">
-      <h2 class="header" style="color: black"><br />Your Friend's Events</h2>
+    <div style="background-color: white">
+      <h2
+        class="header"
+        style="
+          color: black;
+          font-size: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <br />Your Friend's Events
+      </h2>
       <div class="container" style="flex-direction: column">
         <div
           style="
