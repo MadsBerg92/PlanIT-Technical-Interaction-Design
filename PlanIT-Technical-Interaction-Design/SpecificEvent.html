@@ -28,7 +28,8 @@
       <div class="container-fluid ms-auto justify-content-end">
         <!-- logo for bigger screen -->
         <div class="d-none d-md-block" id="largeLogo">
-          <a class="navbar-brand" href="Feed.html">
+          <a class="navbar-brand" href="./Feed.html">
+
             <img
               src="images/logo.png"
               height="40"
@@ -53,7 +54,7 @@
         <!-- logo for smaller screen -->
         <a
           class="navbar-brand d-md-none mx-auto justify-content-center"
-          href="/index.html"
+          href="./Feed.html"
         >
           <img
             src="images/logo.png"
@@ -104,12 +105,6 @@
     </nav>
     <!-- NAVBAR END-->
 
-    <!-- EVENT Title -->
-    <!--Do not use headers such as you would in a text document -->
-    <!-- <div class="event-title">
-      <p class="header">Pernille's awesome birthday party</p>
-    </div> -->
-
     <!-- EVENT IMAGE -->
     <div class="image-container">
       <img class="eventImage" src="images/Birthday.png" />
@@ -151,50 +146,32 @@
 
     <!-- Event Discussion -->
     <div class="container">
-      <div class="discussion-board">
-        <h2>Discussion-board</h2>
-        <div class="discussion-content">
-          <p class="person1">
-            Person A: Hey everyone! I'm so excited about John's 35th birthday
-            party coming up. What should we bring to make it extra special?
-          </p>
-          <p class="person2">
-            Person B: Agreed! How about I bring a cake? I make a mean chocolate
-            cake, and it's perfect for celebrating birthdays.
-          </p>
-          <p class="person3">
-            Person C: That sounds delicious, Person B! I can handle the drinks -
-            a variety of soft drinks and some adult beverages for those who want
-            them.
-          </p>
-          <p class="person1">
-            Person A: Hey everyone! I'm so excited about John's 35th birthday
-            party coming up. What should we bring to make it extra special?
-          </p>
-          <p class="person2">
-            Person B: Agreed! How about I bring a cake? I make a mean chocolate
-            cake, and it's perfect for celebrating birthdays.
-          </p>
-          <p class="person3">
-            Person C: That sounds delicious, Person B! I can handle the drinks -
-            a variety of soft drinks and some adult beverages for those who want
-            them.
-          </p>
-          <p class="person1">
-            Person A: Hey everyone! I'm so excited about John's 35th birthday
-            party coming up. What should we bring to make it extra special?
-          </p>
-          <p class="person2">
-            Person B: Agreed! How about I bring a cake? I make a mean chocolate
-            cake, and it's perfect for celebrating birthdays.
-          </p>
-          <p class="person3">
-            Person C: That sounds delicious, Person B! I can handle the drinks -
-            a variety of soft drinks and some adult beverages for those who want
-            them.
-          </p>
+      <!-- CALENDAR -->
+      <div class="calendar">
+        <div class="calendar-header">
+          <button id="prev-month" onclick="prevMonth()">&#9665;</button>
+          <h1 id="month-year">October 2023</h1>
+          <button id="next-month" onclick="nextMonth()">&#9655;</button>
         </div>
+        <table class="calendar-table">
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody id="calendar-body">
+            <!-- Calendar days will be generated here using JavaScript -->
+          </tbody>
+        </table>
       </div>
+
+      <script src="calendar.js"></script>
 
       <div class="shopping-list">
         <h2>Shopping List</h2>
@@ -244,9 +221,52 @@
         </div>
       </div>
     </div>
-    <!-- Calendar -->
-    <div class="calendar-container">
-      <div id="calendar">CALENDAR NOT IMPLEMENTED YET</div>
+
+    <div class="container">
+      <div class="discussion-board">
+        <h2>Discussion-board</h2>
+        <div class="discussion-content">
+          <p class="person1">
+            Person A: Hey everyone! I'm so excited about John's 35th birthday
+            party coming up. What should we bring to make it extra special?
+          </p>
+          <p class="person2">
+            Person B: Agreed! How about I bring a cake? I make a mean chocolate
+            cake, and it's perfect for celebrating birthdays.
+          </p>
+          <p class="person3">
+            Person C: That sounds delicious, Person B! I can handle the drinks -
+            a variety of soft drinks and some adult beverages for those who want
+            them.
+          </p>
+          <p class="person1">
+            Person A: Hey everyone! I'm so excited about John's 35th birthday
+            party coming up. What should we bring to make it extra special?
+          </p>
+          <p class="person2">
+            Person B: Agreed! How about I bring a cake? I make a mean chocolate
+            cake, and it's perfect for celebrating birthdays.
+          </p>
+          <p class="person3">
+            Person C: That sounds delicious, Person B! I can handle the drinks -
+            a variety of soft drinks and some adult beverages for those who want
+            them.
+          </p>
+          <p class="person1">
+            Person A: Hey everyone! I'm so excited about John's 35th birthday
+            party coming up. What should we bring to make it extra special?
+          </p>
+          <p class="person2">
+            Person B: Agreed! How about I bring a cake? I make a mean chocolate
+            cake, and it's perfect for celebrating birthdays.
+          </p>
+          <p class="person3">
+            Person C: That sounds delicious, Person B! I can handle the drinks -
+            a variety of soft drinks and some adult beverages for those who want
+            them.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
